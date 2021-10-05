@@ -1,0 +1,29 @@
+h1 {
+    font-family: text;
+}
+
+
+
+/*Estilo sobre cosas que tienes que saber sobre jpn*/
+.cosas {
+    border: 2px solid rgb(5, 2, 2);
+    background-image: url(../images/planificacion/bg.png);
+    background-repeat: repeat;
+    opacity: 0.8;
+}
+.cosas ul>li {
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+    text-align: justify;
+}
+.cosas ul>li:before {
+    display: inline-block;
+    width: 1.5em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+}
+/*Fin estilo sobre cosas que tienes que saber sobre jpn*/
