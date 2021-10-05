@@ -1,0 +1,32 @@
+.card-alojamiento{
+    background-image: unset;
+}
+.cardTop{
+    position: relative;
+}
+.cardButton{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translateY(100%) translateX(50%);
+    padding: 5px;
+    border-radius: 5px;
+    border: solid white 1px;
+    text-decoration: none;
+    color: white;
+    pointer-events: none; /*El cursor ignora el boton y el hover de los elementos que esten debajo funcionan a traves*/
+    opacity: 0;
+    transition-duration: 500ms;
+    
+}
+.cardTop img:hover + .cardButton{
+    opacity: 1;
+    transition-duration: 500ms;
+}
+.cardTop img:hover{
+    filter: blur(2px) brightness(60%);
+    transition-duration: 500ms;
+}
+.cardTop img{
+    transition-duration: 500ms;
+}
