@@ -1,13 +1,13 @@
 
-
-/*Estilo navbar*/
-.foto{
-    background-image: url(../images/bg.png);
-    background-color: #cccccc; 
-    height: 280px; 
+.background{
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+}
+/*Estilo navbar*/
+.foto{
+    background-image: url(../images/bg.png);
+    height: 280px; 
 }
 
 .title h1{

@@ -5,8 +5,6 @@ body, html {
 /*Estilo card*/
 .card{
     border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
     opacity: 0.7;
     align-items: center;
     justify-content: center;
@@ -17,7 +15,6 @@ body, html {
     color: white;
     text-shadow: black 1px;
     -webkit-text-stroke: 1px black;
-
 }
 .card:hover {
     transform: scale(1.05);
@@ -26,8 +23,10 @@ body, html {
 }
 
 /*Fin estilo card*/
-.prueba{
-    height: 1000px;
+.introBG{
+    background-image: url(../images/introbg.gif);
+    height: 260px;
+    font-family: title;
 }
 /*JR PASS*/
 .parallax {
