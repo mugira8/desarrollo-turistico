@@ -51,30 +51,111 @@
         </div>
       </div>
     </nav>
+    <!-- <div class="barraBusqueda">
+      <h4 class="tituloBusqueda">Buscar Hoteles</h4>
+      <input type="text" class="" size="50" placeholder="Buscar">
+      <button type="submit" class="botonBusqueda"></button>
+    </div> -->
+      
+    
+    <div class="busqueda">
+      <h4 class="tituloBusqueda">Buscar Hoteles</h4>
+      <div class="barraBusqueda">
+        <div class="form-outline">
+          <input type="search" size="50" id="input" class="form-control" />
+        </div>
+        <button type="button" id="botonBusqueda" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
   </div>
   <!--FIN NAVBAR-->
-
-
+  
+  
   <!--CONTENIDO-->
-  <div class="card card-alojamiento" style="width: 300px;">
-      <a href="" class="cardTop"><!--Enlace para reservar o mostrar mas o lo que sea-->
-        <img src="https://picsum.photos/200" class="card-img-top">
-        <p class="cardButton">Boton de comprar o algo</p>
+  <div id="cardGroup" class="row row-cols-4 g-4 p-3 align-content-center">
+    
+    <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
+      <a href="" class="cardTop "><!--Enlace para reservar o mostrar mas o lo que sea-->
+        <img src="images/Hoteles/HotelShinjukuGranbell.jpg" class="card-img-top">
+        <p class="cardButton">Boton</p>
       </a>
-    <div class="card-body">
-      <h5 class="card-title">Lorem</h5>
-      <p class="card-text">
-        Lorememe
-      </p>
-      <a href="" class="btn btn-primary">
-        a
-      </a>
+      <div class="card-body">
+        <h4 class="card-title nombreHotel">Shinjuku Granbell Hotel</h4>
+        <p class="card-text descripcionHotel">
+          Descripcion del hotel Shinjuku
+        </p>
+        <p class="ubicacionHotel">
+          Ubicacion del hotel Shinjuku
+        </p>
+        <p class="precioHotel">
+          840,99€
+        </p>
+      </div>
     </div>
+
+    <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
+      <a href="" class="cardTop"><!--Enlace para reservar o mostrar mas o lo que sea-->
+        <img src="images/Hoteles/HotelRedPlanet.jpg" class="card-img-top">
+        <p class="cardButton">Boton</p>
+      </a>
+      <div class="card-body">
+        <h4 class="card-title nombreHotel">Red Planet Tokyo Asakusa</h4>
+        <p class="card-text descripcionHotel">
+          Descripcion del hotel Red Planet
+        </p>
+        <p class="ubicacionHotel">
+          Ubicacion del hotel Red Planet
+        </p>
+        <p class="precioHotel">
+          179,99€
+        </p>
+      </div>
+    </div>
+
+    <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
+      <a href="" class="cardTop"><!--Enlace para reservar o mostrar mas o lo que sea-->
+        <img src="images/Hoteles/HotelMitsuiGarden.jpg" class="card-img-top">
+        <p class="cardButton">Boton</p>
+      </a>
+      <div class="card-body">
+        <h4 class="card-title nombreHotel">Mitsui Garden Hotel</h4>
+        <p class="card-text descripcionHotel">
+          Descripcion del hotel Mtsui Garden
+        </p>
+        <p class="ubicacionHotel">
+          Ubicacion del hotel Mitsui Garden
+        </p>
+        <p class="precioHotel">
+          420,69€
+        </p>
+      </div>
+    </div>
+
+    <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
+      <a href="" class="cardTop"><!--Enlace para reservar o mostrar mas o lo que sea-->
+        <img src="images/Hoteles/HotelImayaHostel.jpg" class="card-img-top">
+        <p class="cardButton">Boton</p>
+      </a>
+      <div class="card-body">
+        <h4 class="card-title nombreHotel">Imaya Hostel Kyoto</h4>
+        <p class="card-text descripcionHotel">
+          Descripcion del hotel Imaya Hostel
+        </p>
+        <p class="ubicacionHotel">
+          Ubicacion del hotel Imaya Hostel
+        </p>
+        <p class="precioHotel">
+          21,95€
+        </p>
+      </div>
+    </div>
+
   </div>
-
-
   <!--FIN CONTENIDO-->
 </body>
-
+<script src="js/alojamiento.js"></script>
 </html>
 
