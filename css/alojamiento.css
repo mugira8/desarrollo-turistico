@@ -1,0 +1,80 @@
+p{
+    margin-bottom: unset !important;
+}
+.busqueda{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 80px;
+}
+.barraBusqueda{
+    display: flex;
+}
+.tituloBusqueda{
+    color: white;
+    font-weight: 700;
+}
+
+/*Estilos cards*/
+#cardGroup{
+    justify-content: center;
+}
+.card-alojamiento{
+    background-image: unset;
+    margin: 30px;
+    padding-left: unset !important;
+    padding-right: unset !important;
+}
+.cardTop{
+    position: relative;
+}
+.cardButton{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translateY(50%) translateX(50%);
+    padding: 5px;
+    border-radius: 5px;
+    border: solid white 1px;
+    text-decoration: none;
+    color: white;
+    pointer-events: none; /*El cursor ignora el boton y el hover de los elementos que esten debajo funcionan a traves de este*/
+    opacity: 0;
+    transition-duration: 500ms;
+    
+}
+.cardTop img:hover + .cardButton{
+    opacity: 1;
+    transition-duration: 500ms;
+}
+.cardTop img:hover{
+    filter: blur(2px) brightness(60%);
+    transition-duration: 500ms;
+}
+.cardTop img{
+    transition-duration: 500ms;
+}
+.nombreHotel{
+    color: #4a4c76;
+    font-weight: 700;
+}
+.ubicacionHotel{
+    font-size: 12px;
+    color: gray;
+}
+.precioHotel{
+    color: #ff8777;
+    font-weight: 700;
+    position: relative;
+    right: auto;
+    left: auto;
+}
+/*Fin estilos cards*/
+
+/* @media (max-width: 1200px){
+    .precioHotel{
+        position: relative;
+        right: auto;
+        left: auto;
+    }
+} */
