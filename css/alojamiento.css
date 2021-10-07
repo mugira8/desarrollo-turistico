@@ -1,21 +1,36 @@
 p{
     margin-bottom: unset !important;
 }
+.topPage{
+    margin-bottom: 80px;
+}
+/*Barra de busqueda*/
 .busqueda{
     position: absolute;
-    right: 50%;
+    right: 80%;
     transform: translateX(50%);
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 .barraBusqueda{
     display: flex;
 }
 .tituloBusqueda{
-    color: white;
+    color: #4a4c76;
     font-weight: 700;
 }
+#input{
+    max-width: 400px;
+    min-width: 200px;
+}
 
-/*Estilos cards*/
+/*Orden y filtros*/
+.orden{
+    position: absolute;
+    right: 20%;
+    margin-top: 40px;
+}
+
+/*Cards*/
 #cardGroup{
     justify-content: center;
 }
@@ -69,7 +84,7 @@ p{
     right: auto;
     left: auto;
 }
-/*Fin estilos cards*/
+
 
 /* @media (max-width: 1200px){
     .precioHotel{
