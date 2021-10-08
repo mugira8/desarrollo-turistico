@@ -56,6 +56,11 @@
     background-image: url(../images/yakuza_advertencia.jpg);
 }
 
+#titulo{
+    font-family: yakuza;
+    font-size: 80px;
+}
+
 @media(max-width:600px){
 
 }
