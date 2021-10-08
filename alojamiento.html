@@ -79,7 +79,8 @@
       <div class="dropdown">
         <fieldset>
           <label for="">Ordenar por</label>
-          <select class=" ordenMenu" onchange="ordenar()">
+          <select class=" ordenMenu" onchange="ordenar()" autocomplete="off">
+            <option class="ordenItem" id="ordenDeshabilitado" href="#" disabled selected>--Selecciona opcion--</option>
             <option class="ordenItem" id="ordenNombre" href="#">Nombre</option>
             <option class="ordenItem" id="ordenPrecio" href="#">Precio</option>
             <option class="ordenItem" id="ordenUbicacion" href="#">Ubicación</option>
