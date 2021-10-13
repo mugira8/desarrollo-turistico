@@ -14,10 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (!form.checkValidity()) {
                         event.preventDefault()
                         event.stopPropagation()
+
+                        var email = document.querySelector("#email")
+                        if(/^.*abc$/.test(email.value)){
+                            email.classList.add('required')
+                        }
                     }
 
                     form.classList.add('was-validated')
                 }, false)
             })
     })()
+    
+    
+    
 });
