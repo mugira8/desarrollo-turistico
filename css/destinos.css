@@ -2,6 +2,7 @@
 .card {
     opacity: 1;
 }
+
 .card h5 {
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.493);
@@ -9,6 +10,7 @@
     font-family: text;
     font-size: 30px;
 }
+
 .btn-primary,
 .btn-rounded {
     background-color: rgb(0, 76, 143);
@@ -16,48 +18,81 @@
     border-radius: 110px;
 }
 
-/*FIN estilo de "Lugares que no puedes perderte"*/
-
-
-/* Estilo cards tours */
-.postcard {
-    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-    border-radius: 10px;
-    margin: 0 0 2rem 0;
-    overflow: hidden;
-    font-family: text;
-    background-color: rgb(248, 248, 248);
-}
-.postcard .postcard__img {
-    max-height: 180px;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-}
-.postcard .postcard__img_link {
-    display: contents;
-}
-.postcard .postcard__text {
-    padding: 1.5rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-.postcard .postcard__tagbox {
-    display: flex;
-    flex-flow: column wrap;
-    font-size: 14px;
-    margin: 20px 0 0 0;
-    padding: 0;
-    justify-content: center;
-}
-.postcard .postcard__tagbox .tag__item {
+.button6 {
     display: inline-block;
-    border-radius: 3px;
-    padding: 2.5px 10px;
-    margin: 0 5px 5px 0;
-    cursor: default;
-    user-select: none;
-    transition: background-color 0.3s;
+    padding: 0.7em 1.4em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.15em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #3369ff;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+    text-align: center;
+    position: relative;
 }
-/*FIN estilo cards tours*/
+
+.button6:active {
+    top: 0.1em;
+}
+
+@media all and (max-width:30em) {
+    .button6 {
+        display: block;
+        margin: 0.4em auto;
+    }
+
+    /*FIN estilo de "Lugares que no puedes perderte"*/
+
+
+    /* Estilo cards tours */
+    .postcard {
+        box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+        border-radius: 10px;
+        margin: 0 0 2rem 0;
+        overflow: hidden;
+        font-family: text;
+        background-color: rgb(248, 248, 248);
+    }
+
+    .postcard .postcard__img {
+        max-height: 180px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .postcard .postcard__img_link {
+        display: contents;
+    }
+
+    .postcard .postcard__text {
+        padding: 1.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .postcard .postcard__tagbox {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 14px;
+        margin: 20px 0 0 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .postcard .postcard__tagbox .tag__item {
+        display: inline-block;
+        border-radius: 3px;
+        padding: 2.5px 10px;
+        margin: 0 5px 5px 0;
+        cursor: default;
+        user-select: none;
+        transition: background-color 0.3s;
+    }
+
+    /*FIN estilo cards tours*/
