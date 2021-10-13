@@ -1,0 +1,104 @@
+@font-face {
+    font-family: yakuza;
+    src: url(../fonts/edosz.ttf);
+}
+
+/*JR PASS*/
+.parallax {
+    background-image: url(../images/kabukicho.jpg);
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    -webkit-text-stroke: 0.1px black;
+}
+.parallax h1{
+    font-family: yakuza;
+    font-size: 70px;
+}
+
+.parallax h4{
+    font-family: yakuza;
+    font-size: 40px;
+}
+.parallax a{
+    color: black;
+    text-decoration: none;
+}
+.parallax:hover{
+    transform:scale(1.05);
+    -ms-transform:scale(1.05);
+}
+/*Fin JR PASS*/
+
+.select{
+    background-size: 100% 100%;
+    font-family: yakuza;
+    font-size: 30px;
+    transition: 0.5s;
+    -webkit-text-stroke: 0.1px black;
+}
+.select:hover{
+    transform:scale(1.08);
+    -ms-transform:scale(1.08);
+}
+
+.OrigenCard{
+    background-image: url(../images/yakuza_tattoo.jpg);
+}
+
+.ActividadesCard{
+    background-image: url(../images/yakuza_bar.jpg);
+}
+
+.OtrosCard{
+    background-image: url(../images/yakuza_dotonbori.jpg);
+}
+
+.AdvertenciaCard{
+    background-image: url(../images/yakuza_advertencia.jpg);
+}
+
+#titulo{
+    font-family: yakuza;
+    font-size: 80px;
+}
+
+.horizontal img{
+    height: 300px;
+    width: 500px;
+    border-radius:5px;
+}
+
+.horizontal h5{
+    font-family: yakuza;
+    font-size: 30px;
+}
+
+.horizontal p{
+    font-family: text;
+    font-size: 20px;
+}
+
+.horizontal{
+    border: solid rgb(112, 5, 5);
+    border-radius: 10px;
+}
+
+@media(max-width:600px){
+
+}
+
+@media(max-width:1000px){
+    
+}
