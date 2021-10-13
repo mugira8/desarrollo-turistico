@@ -54,13 +54,18 @@
   <!--FIN NAVBAR-->
 
   <!--CONTENIDO-->
-  
+ 
   <!--FORM-->
-  <div class="container py-3">
+  <div class="background bg">
+
+  <div class="container py-3 bg-danger text-light w-50">
+    <h1 class="text">Formulario de contacto</h1>
+    <p cla>Si necesitas ponerte en contacto con nosotros solo tienes que rellenar este formulario con tus datos y nos
+      pondremos en contacto contigo lo antes posible (a menos que estemos viajando o comiendo 😉 ) </p>
     <form class="needs-validation" novalidate>
       <div class="row g-3 justify-content-center">
         <div class="col-sm-6">
-          <label for="firstName" class="form-label">Nombre</label>
+          <label for="firstName" class="form-label">Nombre*</label>
           <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
           <div class="invalid-feedback">
             El nombre es obligatorio.
@@ -68,7 +73,7 @@
         </div>
 
         <div class="col-sm-6">
-          <label for="lastName" class="form-label">Apellido</label>
+          <label for="lastName" class="form-label">Apellido*</label>
           <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
           <div class="invalid-feedback">
             El apellido es obligatorio.
@@ -146,9 +151,12 @@
         </div>
       </div>
       <hr class="my-4">
-      <button class="col-3 btn btn-primary btn-lg" type="submit">Enviar</button>
-    </form>
+      <div class="text-center">
+      <button class="col-3 btn btn-danger btn-lg" type="submit">Enviar</button>
+    </div></form>
   </div>
+</div>
+
   <!--FIN FORM-->
 
 
