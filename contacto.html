@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/contacto.css">
+  <link rel="icon" href="images/pg.jpg">
 
   <script src="js/form-validation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -54,108 +55,113 @@
   <!--FIN NAVBAR-->
 
   <!--CONTENIDO-->
- 
+
   <!--FORM-->
   <div class="background bg">
 
-  <div class="container py-3 bg-danger text-light w-50 p-5">
-    <h1 class="text text-center"><b>Formulario de contacto</b> </h1>
-    <p class="text-justify">Si necesitas ponerte en contacto con nosotros solo tienes que rellenar este formulario con tus datos y nos
-      pondremos en contacto contigo lo antes posible (a menos que estemos viajando o comiendo 😉 ) </p>
-    <form class="needs-validation" novalidate>
-      <div class="row g-3 justify-content-center">
-        <div class="col-sm-6">
-          <label for="firstName" class="form-label">Nombre*</label>
-          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-          <div class="invalid-feedback">
-            El nombre es obligatorio.
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <label for="lastName" class="form-label">Apellido*</label>
-          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-          <div class="invalid-feedback">
-            El apellido es obligatorio.
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Introduzca un email valido.
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="inquiry" class="form-label">Seleccione el tipo de consulta</label>
-          <select class="form-select" id="inquiry" required>
-            <option value="">Elige...</option>
-            <option>Lorem 1</option>
-            <option>Lorem 2</option>
-            <option>Lorem 3</option>
-            <option>Lorem 4</option>
-            <option>Lorem 5</option>
-          </select>
-          <div class="invalid-feedback">
-            Por favor eliga un tipo de consulta.
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="tema" class="form-label">Tema</label>
-          <input type="text" class="form-control" id="tema" placeholder="" value="" required>
-          <div class="invalid-feedback">
-            El tema es obligatorio.
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="descripcion" class="form-label">Descripción</label>
-          <textarea id="descripcion" name="descripcion" class="form-control" rows="4"
-            placeholder="Escriba su mensaje..." required></textarea>
-          <div class="invalid-feedback">
-            La descripción es obligatoria.
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <label for="continent" class="form-label">Continente</label>
-          <select class="form-select" id="continent" required>
-            <option value="">Elige...</option>
-            <option>America</option>
-            <option>Europa</option>
-            <option>Asia</option>
-            <option>Africa</option>
-            <option>Oceania</option>
-          </select>
-          <div class="invalid-feedback">
-            Por favor seleccione un continente.
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <label for="country" class="form-label">País</label>
-          <select class="form-select" id="country" required>
-            <option value="">Elige...</option>
-            <option>Lorem 1</option>
-            <option>Lorem 2</option>
-            <option>Lorem 3</option>
-            <option>Lorem 4</option>
-            <option>Lorem 5</option>
-          </select>
-          <div class="invalid-feedback">
-            Please provide a valid state.
-          </div>
-        </div>
-      </div>
+    <div class="container py-3 bg-danger text-light w-50 p-5">
+      <h1 class="text text-center"><b>Formulario de contacto</b> </h1>
+      <p class="text-justify">Si necesitas ponerte en contacto con nosotros solo tienes que rellenar este formulario con
+        tus datos y nos
+        pondremos en contacto contigo lo antes posible (a menos que estemos viajando o comiendo 😉 ).</p>
+      <p>Antes puede mirar si ese tema ha sido solventado en <a class="text-decoration-underline" href="#temas">temas
+          más consultados.</a></p>
       <hr class="my-4">
-      <div class="text-center">
-      <button class="col-3 btn btn-danger btn-lg" type="submit">Enviar</button>
-    </div></form>
+      <form class="needs-validation" novalidate>
+        <div class="row g-3 justify-content-center">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">Nombre*</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              El nombre es obligatorio.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Apellido*</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              El apellido es obligatorio.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Introduzca un email valido.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="inquiry" class="form-label">Seleccione el tipo de consulta</label>
+            <select class="form-select" id="inquiry" required>
+              <option value="">Elige...</option>
+              <option>Lorem 1</option>
+              <option>Lorem 2</option>
+              <option>Lorem 3</option>
+              <option>Lorem 4</option>
+              <option>Lorem 5</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor eliga un tipo de consulta.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="tema" class="form-label">Tema</label>
+            <input type="text" class="form-control" id="tema" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              El tema es obligatorio.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea id="descripcion" name="descripcion" class="form-control" rows="4"
+              placeholder="Escriba su mensaje..." required></textarea>
+            <div class="invalid-feedback">
+              La descripción es obligatoria.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="continent" class="form-label">Continente</label>
+            <select class="form-select" id="continent" required>
+              <option value="">Elige...</option>
+              <option>America</option>
+              <option>Europa</option>
+              <option>Asia</option>
+              <option>Africa</option>
+              <option>Oceania</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor seleccione un continente.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="country" class="form-label">País</label>
+            <select class="form-select" id="country" required>
+              <option value="">Elige...</option>
+              <option>Lorem 1</option>
+              <option>Lorem 2</option>
+              <option>Lorem 3</option>
+              <option>Lorem 4</option>
+              <option>Lorem 5</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+          <button class="col-3 btn btn-danger btn-lg" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 
   <!--FIN FORM-->
 
@@ -174,7 +180,7 @@
       </div>
 
       <!--Google map-->
-      <div id="map-container-google-1" class="z-depth-1-half map-container col-md-8 mx-auto mb-md-0 mb-4">
+      <div id="map-container-google-1" class="z-depth-1-half map-container col-md-8 mx-auto mb-md-0">
         <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
           style="border:0" allowfullscreen></iframe>
       </div>
@@ -184,7 +190,7 @@
 
 
   <!--TEMAS MAS COMUNES-->
-  <div class="container text-center m-5">
+  <div class="container text-center m-5" id="temas">
     <!-- Grid row -->
     <div class="row mt-5">
       <h2 class="text-uppercase fw-bold text-center mb-4">Temas más consultados</h2>
