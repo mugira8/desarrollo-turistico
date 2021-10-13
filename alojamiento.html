@@ -74,20 +74,24 @@
     <!--FIN BUSQUEDA-->
     
     <!--ORDEN-->
-    <div class="orden">
+    <div class="orden row row-cols-2 align-content-center">
       
-      <div class="dropdown">
+      <div id="ordenField" class="dropdown col-lg-6 col-md-12 col-12">
         <fieldset>
-          <label for="">Ordenar por</label>
-          <select class=" ordenMenu" onchange="ordenar()" autocomplete="off">
-            <option class="ordenItem" id="ordenDeshabilitado" href="#" disabled selected>--Selecciona opcion--</option>
+          <!-- <label for="">Ordenar por</label> -->
+          <select class=" ordenMenu " onchange="ordenar()" autocomplete="off">
+            <option class="ordenItem" id="ordenDeshabilitado" href="#" disabled selected>Ordenar por</option>
             <option class="ordenItem" id="ordenNombre" href="#">Nombre</option>
             <option class="ordenItem" id="ordenPrecio" href="#">Precio</option>
             <option class="ordenItem" id="ordenUbicacion" href="#">Ubicación</option>
           </select>
         </fieldset>
       </div>
+      <a id="botonInvertir" href="#!" onclick="invertirOrden()" class="col-lg-6 col-md-12 col-12">Invertir orden ▲</a>
+      <!--El ! en href sirve para que no haga scroll hacia arriba al pulsar el enlace-->
       
+
+
     </div>
     <!--FIN ORDEN-->
   </div>
@@ -107,10 +111,10 @@
           Descripcion del hotel Shinjuku
         </p>
         <p class="ubicacionHotel">
-          Ubicacion del hotel Shinjuku
+          Kabukicho, Shinjuku
         </p>
         <p class="precioHotel">
-          840,99€
+          230,99€
         </p>
       </div>
     </div>
@@ -126,7 +130,7 @@
           Descripcion del hotel Red Planet
         </p>
         <p class="ubicacionHotel">
-          Ubicacion del hotel Red Planet
+          Asakusa, Tokyo
         </p>
         <p class="precioHotel">
           179,99€
@@ -145,7 +149,7 @@
           Descripcion del hotel Mtsui Garden
         </p>
         <p class="ubicacionHotel">
-          Ubicacion del hotel Mitsui Garden
+          Ginza, Tokyo
         </p>
         <p class="precioHotel">
           420,69€
@@ -164,10 +168,10 @@
           Descripcion del hotel Imaya Hostel
         </p>
         <p class="ubicacionHotel">
-          Ubicacion del hotel Imaya Hostel
+          Nakagyo Ward, Kyoto
         </p>
         <p class="precioHotel">
-          21,95€
+          1,99€
         </p>
       </div>
     </div>
