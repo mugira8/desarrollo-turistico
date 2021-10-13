@@ -1,21 +1,40 @@
 p{
     margin-bottom: unset !important;
 }
+.topPage{
+    margin-bottom: 80px;
+}
+/*Barra de busqueda*/
 .busqueda{
     position: absolute;
-    right: 50%;
+    right: 80%;
     transform: translateX(50%);
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 .barraBusqueda{
     display: flex;
 }
 .tituloBusqueda{
-    color: white;
+    color: #4a4c76;
     font-weight: 700;
 }
+#input{
+    max-width: 400px;
+    min-width: 200px;
+}
 
-/*Estilos cards*/
+
+
+/*Orden y filtros*/
+.orden{
+    position: absolute;
+    right: 20%;
+    margin-top: 40px;
+}
+
+
+
+/*Cards*/
 #cardGroup{
     justify-content: center;
 }
@@ -24,9 +43,6 @@ p{
     margin: 30px;
     padding-left: unset !important;
     padding-right: unset !important;
-}
-.cardTop{
-    position: relative;
 }
 .cardButton{
     position: absolute;
@@ -41,19 +57,21 @@ p{
     pointer-events: none; /*El cursor ignora el boton y el hover de los elementos que esten debajo funcionan a traves de este*/
     opacity: 0;
     transition-duration: 500ms;
-    
 }
-.cardTop img:hover + .cardButton{
-    opacity: 1;
-    transition-duration: 500ms;
+.cardTop{
+    position: relative;
 }
-.cardTop img:hover{
-    filter: blur(2px) brightness(60%);
-    transition-duration: 500ms;
-}
-.cardTop img{
-    transition-duration: 500ms;
-}
+    .cardTop img:hover + .cardButton{
+        opacity: 1;
+        transition-duration: 500ms;
+    }
+    .cardTop img:hover{
+        filter: blur(2px) brightness(60%);
+        transition-duration: 500ms;
+    }
+    .cardTop img{
+        transition-duration: 500ms;
+    }
 .nombreHotel{
     color: #4a4c76;
     font-weight: 700;
@@ -69,7 +87,15 @@ p{
     right: auto;
     left: auto;
 }
-/*Fin estilos cards*/
+
+/*El div con esta id no esta en la pagina por defecto, 
+pero aparece por javascript cuando no se encuentran hoteles al buscar*/
+#notFound{
+    font-size: 40;
+    color: gray;
+    width: 100%;
+    text-align: center;
+}
 
 /* @media (max-width: 1200px){
     .precioHotel{

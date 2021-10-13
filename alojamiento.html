@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/general.css">
 
   <!-- <script src="js/index.js"></script> -->
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -50,30 +51,48 @@
         </div>
       </div>
     </nav>
-    <!-- <div class="barraBusqueda">
-      <h4 class="tituloBusqueda">Buscar Hoteles</h4>
-      <input type="text" class="" size="50" placeholder="Buscar">
-      <button type="submit" class="botonBusqueda"></button>
-    </div> -->
+
       
-    
-    <div class="busqueda">
-      <h4 class="tituloBusqueda">Buscar Hoteles</h4>
-      <div class="barraBusqueda">
-        <div class="form-outline">
-          <input type="search" size="50" id="input" class="form-control" />
-        </div>
-        <button type="button" id="botonBusqueda" class="btn btn-primary">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-    </div>
 
   </div>
   <!--FIN NAVBAR-->
   
   
   <!--CONTENIDO-->
+  
+  <div class="topPage">
+    <!--BUSQUEDA-->
+    <div class="busqueda">
+      <h4 class="tituloBusqueda">Buscar Hoteles</h4>
+      <div class="barraBusqueda">
+        <div class="form-outline">
+          <input type="search" id="input" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <!--FIN BUSQUEDA-->
+    
+    <!--ORDEN-->
+    <div class="orden">
+      
+      <div class="dropdown">
+        <fieldset>
+          <label for="">Ordenar por</label>
+          <select class=" ordenMenu" onchange="ordenar()" autocomplete="off">
+            <option class="ordenItem" id="ordenDeshabilitado" href="#" disabled selected>--Selecciona opcion--</option>
+            <option class="ordenItem" id="ordenNombre" href="#">Nombre</option>
+            <option class="ordenItem" id="ordenPrecio" href="#">Precio</option>
+            <option class="ordenItem" id="ordenUbicacion" href="#">Ubicación</option>
+          </select>
+        </fieldset>
+      </div>
+      
+    </div>
+    <!--FIN ORDEN-->
+  </div>
+
+
+  <!--CARDS-->
   <div id="cardGroup" class="row row-cols-4 g-4 p-3 align-content-center">
     
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
@@ -153,6 +172,7 @@
     </div>
 
   </div>
+  <!--FIN CARDS-->
   <!--FIN CONTENIDO-->
 </body>
 <script src="js/alojamiento.js"></script>
