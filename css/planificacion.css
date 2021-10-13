@@ -2,7 +2,9 @@ h1 {
     font-family: text;
 }
 
-
+p{
+    text-align: justify;
+}
 
 /*Estilo sobre cosas que tienes que saber sobre jpn*/
 .cosas {
@@ -27,3 +29,12 @@ h1 {
     content: counter(item) ".";
 }
 /*Fin estilo sobre cosas que tienes que saber sobre jpn*/
+
+
+/*Estilo de los lugares de tokio (NAV TAB)*/
+.city{
+    color: brown;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: none;
+}
