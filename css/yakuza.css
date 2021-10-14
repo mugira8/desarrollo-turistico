@@ -20,9 +20,16 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    -webkit-text-stroke: 0.1px black;
 }
-.parallax h1, h4{
-    font-family: text;
+.parallax h1{
+    font-family: yakuza;
+    font-size: 70px;
+}
+
+.parallax h4{
+    font-family: yakuza;
+    font-size: 40px;
 }
 .parallax a{
     color: black;
@@ -39,6 +46,7 @@
     font-family: yakuza;
     font-size: 30px;
     transition: 0.5s;
+    -webkit-text-stroke: 0.1px black;
 }
 .select:hover{
     transform:scale(1.08);
@@ -64,6 +72,27 @@
 #titulo{
     font-family: yakuza;
     font-size: 80px;
+}
+
+.horizontal img{
+    height: 300px;
+    width: 500px;
+    border-radius:5px;
+}
+
+.horizontal h5{
+    font-family: yakuza;
+    font-size: 30px;
+}
+
+.horizontal p{
+    font-family: text;
+    font-size: 20px;
+}
+
+.horizontal{
+    border: solid rgb(112, 5, 5);
+    border-radius: 10px;
 }
 
 @media(max-width:600px){
