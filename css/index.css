@@ -30,28 +30,16 @@ body, html {
     height: 260px;
     font-family: title;
 }
+
 /*JR PASS*/
 .parallax {
     background-image: url(../images/jrpass.png);
-    height: 50%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
 }
 .parallax h1, h4{
     font-family: text;
 }
-.parallax a{
-    color: black;
-    text-decoration: none;
+.parallax a:hover{
+   color: white;
 }
 /*Fin JR PASS*/
 

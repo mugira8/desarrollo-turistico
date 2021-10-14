@@ -17,6 +17,21 @@ a:hover {
 .text {
     font-family: text;
 }
+.parallax {
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*Estilo navbar*/
 .foto {
@@ -72,6 +87,7 @@ footer {
     background-image: url(https://i.pinimg.com/originals/75/96/41/7596414ecd2019d7e0fd782f6aa736ae.jpg)
 }
 /*FIN Footer*/
+
 
 /*Fuentes*/
 @font-face {
