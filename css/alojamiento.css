@@ -30,12 +30,12 @@ p{
     position: absolute;
     right: 5%;
     /* margin-top: 40px; */
-    top: 300px;
+    top: 320px;
     width: 30%;
     min-width: 130px;
 }
     #ordenField{
-       margin-bottom: 10px;
+       margin-bottom: 3px;
        text-align: center;
     }
     .orden a{
@@ -51,8 +51,15 @@ p{
         border-radius: 5px;
         /* font-weight: 600; */
     }
+    .ordenMenu{
+        background-color: #4a4c76;
+        color: white;
+        border-radius: 5px;
+        border-style: none;
+    }
     #botonInvertir{
         text-align: center;
+        display: none;
     }
 
 
@@ -62,6 +69,8 @@ p{
     justify-content: center;
     padding-right: unset !important; 
     padding-left: unset !important;
+    margin-right: unset !important;
+    margin-left: unset !important;
 }
 .card-alojamiento{
     background-image: unset;
@@ -112,6 +121,27 @@ p{
     right: auto;
     left: auto;
 }
+.descripcionHotel{
+    font-size: 15px;
+    padding-bottom: 8px;
+}
+.filter-grey{
+    filter: invert(90%) sepia(0%) saturate(1775%) hue-rotate(76deg) brightness(60%) contrast(96%);
+}
+
+/*Modal*/
+#botonModal{
+    background-color: #4a4c76;
+    color: white;
+}
+.modal-footer{
+    border-top: none !important;
+}
+.modal-header{
+    border-bottom: none !important;
+}
+
+
 
 /*El div con esta id no esta en la pagina por defecto, 
 pero aparece por javascript cuando no se encuentran hoteles al buscar*/
