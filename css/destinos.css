@@ -18,7 +18,17 @@
 
 /*FIN estilo de "Lugares que no puedes perderte"*/
 
+.button6 {
+    display: inline-block;
+    padding: 0.7em 1.4em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.15em;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #3369ff;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
 
+}
 /* Estilo cards tours */
 .postcard {
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
