@@ -65,10 +65,22 @@ advertencia.addEventListener("click", function(){
     titulo.innerHTML=" Advertenvcia ";
 
     titulocard1.innerHTML="CARACTERISTICAS";
-    textcard1.innerHTML="Kabukichō (歌舞伎町?) es un vecindario de Shinjuku, Tokio, Japón. Se considera el barrio rojo más importante de Japón; en su entorno se encuentran miles de locales de entretenimiento enfocados al mercado de adultos. El área cuenta con muchos bares, hostales, moteles, locales comerciales, restaurantes y clubes nocturnos tanto para mujeres como para hombres. En la parte oeste del vecindario se hallan también muchos de los establecimientos dedicados a la población gay de Tokio, que se extiende hasta el barrio de Shinjuku San-Choume (新宿三丁目).";
+    textcard1.innerHTML="El cuerpo de los yakuza está marcado por sus tatuajes. " +
+    "Son de una realización distinta a la conocida, ya que se hace con una aguja de bambú. <br>" +
+    "Este proceso, además, dura muchos meses e incluso años. " +
+    "El diseño puede comenzar con algo pequeño, que posteriormente se extiende. " +
+    "En la cultura yakuza los tatuajes son sinónimos de orgullo. " +
+    "Los llevan sin ningún tipo de pena, ya que a mayor cantidad de estos, más es la demostración de tolerancia al dolor. <br>" +
+    "Por otra parte, los tatuajes tienen significados. " +
+    "Señalan el tipo de clan al que se pertenece, su lema o símbolos, sus ancestros y la lealtad. " +
+    "Existen casos en los que, a su muerte, las pieles de algunos yakuzas son vendidas por el diseño de sus tatuajes. ";
+    imgcard1.src="./images/kabukicho_card.jpg";
     imgcard1.src="./images/kabukicho_card.jpg";
 
     titulocard2.innerHTML="LA ZONA";
-    textcard2.innerHTML="Shinjuku es la estación de tren más bulliciosa de Japón ¡y puede que del mundo entero! Al oeste existe un distrito de oficinas en cuyo centro se encuentran las dependencias gubernamentales metropolitanas de Tokio. Al este, un barrio con centros comerciales de larga trayectoria, cines y teatros. El parque Shinjuku Gyoen, que fue en su origen jardín de la casa imperial, es muy célebre como lugar de contemplación de las flores del cerezo en marzo y abril. En Shinjuku, muchos restaurantes se mantienen abiertos toda la noche y, en distritos como Omoide Yokocho (o “callejón de los recuerdos”) o Shinjuku Golden Machi, las calles secundarias están llenas de diminutos restaurantes y bares que reflejan el estilo y la personalidad únicos de cada dueño.";
+    textcard2.innerHTML="Debido a su amplio y estricto código moral, la mafia de los yakuza poseen una serie de castigos que se emplean cuando hay deslealtad o se desea abandonar el clan. <br>" +
+    "Hasta ahora, el castigo más conocido que aplican los yakuza es la amputación del dedo meñique. " +
+    "En la actualidad pueden encontrarse a exmiembros que poseen estas características. " +
+    "Muchos de ellos han decidido dejar Japón y establecerse en naciones de occidente.";
     imgcard2.src="./images/shinjuku.jpg";
 })
