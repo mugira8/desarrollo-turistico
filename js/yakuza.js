@@ -64,7 +64,7 @@ otro.addEventListener("click", function(){
 advertencia.addEventListener("click", function(){
     titulo.innerHTML=" Advertenvcia ";
 
-    titulocard1.innerHTML="CARACTERISTICAS";
+    titulocard1.innerHTML="TATUAJES";
     textcard1.innerHTML="El cuerpo de los yakuza está marcado por sus tatuajes. " +
     "Son de una realización distinta a la conocida, ya que se hace con una aguja de bambú. <br>" +
     "Este proceso, además, dura muchos meses e incluso años. " +
@@ -74,13 +74,12 @@ advertencia.addEventListener("click", function(){
     "Por otra parte, los tatuajes tienen significados. " +
     "Señalan el tipo de clan al que se pertenece, su lema o símbolos, sus ancestros y la lealtad. " +
     "Existen casos en los que, a su muerte, las pieles de algunos yakuzas son vendidas por el diseño de sus tatuajes. ";
-    imgcard1.src="./images/kabukicho_card.jpg";
-    imgcard1.src="./images/kabukicho_card.jpg";
+    imgcard1.src="./images/tatuaje-yakuza.jpg";
 
-    titulocard2.innerHTML="LA ZONA";
+    titulocard2.innerHTML="CASTIGOS";
     textcard2.innerHTML="Debido a su amplio y estricto código moral, la mafia de los yakuza poseen una serie de castigos que se emplean cuando hay deslealtad o se desea abandonar el clan. <br>" +
     "Hasta ahora, el castigo más conocido que aplican los yakuza es la amputación del dedo meñique. " +
     "En la actualidad pueden encontrarse a exmiembros que poseen estas características. " +
     "Muchos de ellos han decidido dejar Japón y establecerse en naciones de occidente.";
-    imgcard2.src="./images/shinjuku.jpg";
+    imgcard2.src="./images/yakuza-castigo.jpg";
 })
