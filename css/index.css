@@ -12,16 +12,16 @@ body, html {
 }
 .card a{
     text-decoration: none;
-    color: white;
-    text-shadow: black 1px;
-    -webkit-text-stroke: 1px black;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: #4a4c76 1px;
 }
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     opacity: 1;
     color: white;
-
 }
 
 /*Fin estilo card*/

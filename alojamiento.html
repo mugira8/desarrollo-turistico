@@ -4,63 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/alojamiento.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/general.css">
-  <link rel="icon" href="images/pg.jpg">
 
+  <link rel="icon" href="images/pg.jpg">
   <title>Nihonryokō</title>
 </head>
 
 <body>
-
-  <!--NAVBAR-->
-  <div class="background foto">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid title p-2">
-        <div class="brand">
-          <a class="navbar-brand m-0 text-center" href="index.html">
-            <h1>Nihonryoko</h1>
-            <h6 class="text-center">日本旅行 </h6>
-          </a>
-        </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
-          <ul class="navbar-nav ms-auto flex-nowrap">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"><i class="fas fa-home"></i>
-                Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="alojamiento.html"><i class="fas fa-bed"></i>
-                <b>Alojamiento</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="yakuza.html"><i class="fas fa-dragon"></i> Kabukicho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html"><i class="fas fa-phone"></i> Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
-
-  </div>
-  <!--FIN NAVBAR-->
-
-
-  <!--CONTENIDO-->
+  <!-- Navbar -->
+  <div id="navbar" class="background foto"></div>
+  
+  <!-- Content -->
 
   <div class="topPage">
-    <!--BUSQUEDA-->
+    <!-- BUSQUEDA -->
     <div class="busqueda">
       <h4 class="tituloBusqueda">Buscar Hoteles</h4>
       <div class="barraBusqueda">
@@ -99,14 +59,16 @@
   <div id="cardGroup" class="row row-cols-4 g-4 p-3 align-content-center">
 
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
-      <a href="" class="cardTop " data-bs-toggle="modal" data-bs-target="#modalHotel"><!--Enlace para abrir modal-->
+      <a href="" class="cardTop " data-bs-toggle="modal" data-bs-target="#modalHotel">
+        <!--Enlace para abrir modal-->
         <img src="images/Hoteles/HotelShinjukuGranbell.jpg" class="card-img-top">
         <p class="cardButton">Ver más</p>
       </a>
       <div class="card-body">
         <h4 class="card-title nombreHotel">Shinjuku Granbell Hotel</h4>
         <p class="card-text descripcionHotel">
-         El Granbell Hotel ofrece habitaciones modernas decoradas con elegancia siguiendo un concepto de diseño exclusivo
+          El Granbell Hotel ofrece habitaciones modernas decoradas con elegancia siguiendo un concepto de diseño
+          exclusivo
         </p>
         <p class="ubicacionHotel">
           <img src="images/geo-alt-fill.svg" class="filter-grey"> Kabukicho, Shinjuku
@@ -125,7 +87,8 @@
       <div class="card-body">
         <h4 class="card-title nombreHotel">Red Planet Tokyo Asakusa</h4>
         <p class="card-text descripcionHotel">
-          Este elegante hotel para no fumadores dispone de habitaciones con TV de pantalla plana vía satélite y WiFi gratuita
+          Este elegante hotel para no fumadores dispone de habitaciones con TV de pantalla plana vía satélite y WiFi
+          gratuita
         </p>
         <p class="ubicacionHotel">
           <img src="images/geo-alt-fill.svg" class="filter-grey"> Asakusa, Tokyo
@@ -144,7 +107,8 @@
       <div class="card-body">
         <h4 class="card-title nombreHotel">Mitsui Garden Hotel</h4>
         <p class="card-text descripcionHotel">
-          El Mitsui Garden Hotel Ginza Premier ofrece vistas a la ciudad y a la bahía de Tokio desde habitaciones elegantes y modernas
+          El Mitsui Garden Hotel Ginza Premier ofrece vistas a la ciudad y a la bahía de Tokio desde habitaciones
+          elegantes y modernas
         </p>
         <p class="ubicacionHotel">
           <img src="images/geo-alt-fill.svg" class="filter-grey"> Ginza, Tokyo
@@ -163,7 +127,8 @@
       <div class="card-body">
         <h4 class="card-title nombreHotel">Imaya Hostel Kyoto</h4>
         <p class="card-text descripcionHotel">
-          El IMAYA Hostel Kyoto goza de una buena ubicación en el centro de Kioto y ofrece habitaciones con aire acondicionado, bar, WiFi gratuita y salón compartido
+          El IMAYA Hostel Kyoto goza de una buena ubicación en el centro de Kioto y ofrece habitaciones con aire
+          acondicionado, bar, WiFi gratuita y salón compartido
         </p>
         <p class="ubicacionHotel">
           <img src="images/geo-alt-fill.svg" class="filter-grey"> Nakagyo Ward, Kyoto
@@ -182,7 +147,8 @@
       <div class="card-body">
         <h4 class="card-title nombreHotel">Sorano hotel</h4>
         <p class="card-text descripcionHotel">
-          SORANO HOTEL tiene vistas al parque Showa Kinen en el área de Tachikawa en el oeste de Tokio, y ofrece 81 habitaciones en el nuevo desarrollo de Green Springs
+          SORANO HOTEL tiene vistas al parque Showa Kinen en el área de Tachikawa en el oeste de Tokio, y ofrece 81
+          habitaciones en el nuevo desarrollo de Green Springs
         </p>
         <p class="ubicacionHotel">
           <img src="images/geo-alt-fill.svg" class="filter-grey"> Tachikawa, tokyo
@@ -201,7 +167,8 @@
       <div class="card-body">
         <h4 class="card-title nombreHotel">Hotel Housei</h4>
         <p class="card-text descripcionHotel">
-          El Housei Hotel cuenta con servicio de traslado gratuito, recepción 24 horas, jardín, guardaesquíes, tiendas (en el mismo establecimiento), máquina expendedora y aparcamiento gratuito
+          El Housei Hotel cuenta con servicio de traslado gratuito, recepción 24 horas, jardín, guardaesquíes, tiendas
+          (en el mismo establecimiento), máquina expendedora y aparcamiento gratuito
         </p>
         <p class="ubicacionHotel">
           <img src="images/geo-alt-fill.svg" class="filter-grey"> Nagano, Yamanouchi
@@ -215,33 +182,15 @@
   </div>
   <!--FIN CARDS-->
   <!--FIN CONTENIDO-->
-  <!--FOOTER-->
-  <footer class="bg-danger background text-center text-white">
-    <div class="container p-4 pb-0">
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-      </section>
-    </div>
-
-    <div class="text-center p-3">
-      © 2020 Copyright:
-      <a class="text-white" href="index.html">Nihonryoko.com</a>
-    </div>
-  </footer>
-  <!--FOOTER-->
+  <!-- Footer -->
+  <footer id="footer" class="bg-danger background text-center text-white"></footer>
 
   <!-- Scripts -->
   <script src="js/alojamiento.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"> </script>
   <script src="https://kit.fontawesome.com/c4fc8a3024.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/insert.js"></script>
 </body>
 
 
@@ -265,6 +214,7 @@
   </div>
 </div>
 <!--🐬 MR. Dolphin???-->
+
 </html>
 
 </html>
