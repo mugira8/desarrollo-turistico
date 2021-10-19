@@ -6,15 +6,14 @@ hoteles = [
   ["Sorano hotel", "SORANO HOTEL tiene vistas al parque Showa Kinen en el área de Tachikawa en el oeste de Tokio, y ofrece 81 habitaciones en el nuevo desarrollo de Green Springs", "Tachikawa, tokyo", "85,99€", "images/Hoteles/HotelSorano.jpg"],
   ["Hotel Housei", "El Housei Hotel cuenta con servicio de traslado gratuito, recepción 24 horas, jardín, guardaesquíes, tiendas (en el mismo establecimiento), máquina expendedora y aparcamiento gratuito", "Nagano, Yamanouchi", "385,99€", "images/Hoteles/HotelHousei.jpg"]
 ]
-
+disponibilidad = [Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500)]
 document.addEventListener("DOMContentLoaded", function (event) {
   ordenNombre = document.getElementById("ordenNombre");
   ordenPrecio = document.getElementById("ordenPrecio");
   ordenUbicacion = document.getElementById("ordenUbicacion");
   ordenInvertido = false;
-
 });
-
+console.log(disponibilidad)
 window.onload = function () {
   document.getElementById("input").value = ""
 }
