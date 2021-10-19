@@ -1,55 +1,259 @@
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/general.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/contacto.css">
 
-    <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/c4fc8a3024.js" crossorigin="anonymous"></script>
-    <title>Nihonryokō</title>
-
+  <script src="js/form-validation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/c4fc8a3024.js" crossorigin="anonymous"></script>
+  <title>Nihonryokō</title>
 </head>
+
 <body>
-    
-<!--NAVBAR-->
-<div class="foto"> 
-  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <!--NAVBAR-->
+  <div class="background foto">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid title p-2">
         <div class="brand">
-          <a class="navbar-brand m-0 text-center" href="index.html"><h1>Nihonryoko</h1>
-          <h6 class="text-center">日本旅行 </h6></a>
+          <a class="navbar-brand m-0 text-center" href="index.html">
+            <h1>Nihonryoko</h1>
+            <h6 class="text-center">日本旅行 </h6>
+          </a>
         </div>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
         </button>
 
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
           <ul class="navbar-nav ms-auto flex-nowrap">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="alojamiento.html"><i class="fas fa-home"></i> Alojamiento</a>
+              <a class="nav-link" aria-current="page" href="alojamiento.html"><i class="fas fa-home"></i>
+                Alojamiento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="yakuza.html"><i class="fas fa-dragon"></i> Kabukicho </a>
+              <a class="nav-link" href="yakuza.html"><i class="fas fa-dragon"></i> Kabukicho</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html"><i class="fas fa-phone"></i><b> Contacto</b></a>
+              <a class="nav-link" href="contacto.html"><i class="fas fa-phone"></i> <b> Contacto</b> </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  </div>
+  <!--FIN NAVBAR-->
+
+  <!--CONTENIDO-->
+ 
+  <!--FORM-->
+  <div class="background bg">
+
+  <div class="container py-3 bg-danger text-light w-50 p-5">
+    <h1 class="text text-center"><b>Formulario de contacto</b> </h1>
+    <p class="text-justify">Si necesitas ponerte en contacto con nosotros solo tienes que rellenar este formulario con tus datos y nos
+      pondremos en contacto contigo lo antes posible (a menos que estemos viajando o comiendo 😉 ) </p>
+    <form class="needs-validation" novalidate>
+      <div class="row g-3 justify-content-center">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Nombre*</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            El nombre es obligatorio.
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Apellido*</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            El apellido es obligatorio.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Introduzca un email valido.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="inquiry" class="form-label">Seleccione el tipo de consulta</label>
+          <select class="form-select" id="inquiry" required>
+            <option value="">Elige...</option>
+            <option>Lorem 1</option>
+            <option>Lorem 2</option>
+            <option>Lorem 3</option>
+            <option>Lorem 4</option>
+            <option>Lorem 5</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor eliga un tipo de consulta.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="tema" class="form-label">Tema</label>
+          <input type="text" class="form-control" id="tema" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            El tema es obligatorio.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="descripcion" class="form-label">Descripción</label>
+          <textarea id="descripcion" name="descripcion" class="form-control" rows="4"
+            placeholder="Escriba su mensaje..." required></textarea>
+          <div class="invalid-feedback">
+            La descripción es obligatoria.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="continent" class="form-label">Continente</label>
+          <select class="form-select" id="continent" required>
+            <option value="">Elige...</option>
+            <option>America</option>
+            <option>Europa</option>
+            <option>Asia</option>
+            <option>Africa</option>
+            <option>Oceania</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor seleccione un continente.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="country" class="form-label">País</label>
+          <select class="form-select" id="country" required>
+            <option value="">Elige...</option>
+            <option>Lorem 1</option>
+            <option>Lorem 2</option>
+            <option>Lorem 3</option>
+            <option>Lorem 4</option>
+            <option>Lorem 5</option>
+          </select>
+          <div class="invalid-feedback">
+            Please provide a valid state.
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+      <button class="col-3 btn btn-danger btn-lg" type="submit">Enviar</button>
+    </div></form>
+  </div>
 </div>
-<!--FIN NAVBAR-->
+
+  <!--FIN FORM-->
 
 
-<!--CONTENIDO-->
+  <!--LOCALIZACION y MAPS-->
+  <div class="container text-center text-md-start mt-5">
+    <div class="row mt-5">
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto mb-4 mb-md-0">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+        <p><i class="fas fa-home me-3"></i>New York, NY 10012, US</p>
+        <p><i class="fas fa-envelope me-3"></i>info@example.com</p>
+        <p><i class="fas fa-phone me-3"></i>+ 01 234 567 88</p>
+        <p><i class="fas fa-print me-3"></i>+ 01 234 567 89</p>
+      </div>
 
-<!--FIN CONTENIDO-->
+      <!--Google map-->
+      <div id="map-container-google-1" class="z-depth-1-half map-container col-md-8 mx-auto mb-md-0 mb-4">
+        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!--FIN LOCALIZACION y MAPS-->
 
+
+  <!--TEMAS MAS COMUNES-->
+  <div class="container text-center m-5">
+    <!-- Grid row -->
+    <div class="row mt-5">
+      <h2 class="text-uppercase fw-bold text-center mb-4">Temas más consultados</h2>
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-2 mx-auto mb-4">
+        <!-- Links -->
+        <p><a href="#" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-2 mx-auto mb-4">
+        <!-- Links -->
+        <p><a href="#" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-2 mx-auto mb-4">
+        <!-- Links -->
+        <p><a href="#" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-2 mx-auto mb-4">
+        <!-- Links -->
+        <p><a href="#" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+        <p><a href="#!" class="text-decoration-none">Lorem ipsum dolor</a></p>
+      </div>
+    </div>
+    <!-- Grid row -->
+  </div>
+
+
+  <!--FIN CONTENIDO-->
+
+
+  <!--FOOTER-->
+  <footer class="bg-danger background text-center text-white">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+      </section>
+    </div>
+
+    <div class="text-center p-3">
+      © 2020 Copyright:
+      <a class="text-white" href="index.html">Nihonryoko.com</a>
+    </div>
+  </footer>
+  <!--FOOTER-->
 </body>
+
 </html>

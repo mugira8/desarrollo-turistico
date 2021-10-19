@@ -5,8 +5,6 @@ body, html {
 /*Estilo card*/
 .card{
     border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
     opacity: 0.7;
     align-items: center;
     justify-content: center;
@@ -17,17 +15,20 @@ body, html {
     color: white;
     text-shadow: black 1px;
     -webkit-text-stroke: 1px black;
-
 }
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     opacity: 1;
+    color: white;
+
 }
 
 /*Fin estilo card*/
-.prueba{
-    height: 1000px;
+.introBG{
+    background-image: url(../images/introbg.gif);
+    height: 260px;
+    font-family: title;
 }
 /*JR PASS*/
 .parallax {

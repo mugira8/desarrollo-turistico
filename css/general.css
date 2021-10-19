@@ -1,16 +1,35 @@
-
-
-/*Estilo navbar*/
-.foto{
-    background-image: url(../images/bg.png);
-    background-color: #cccccc; 
-    height: 280px; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+.text-justify {
+    text-align: justify;
+}
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title {
+    font-family: title;
+}
+.text {
+    font-family: text;
 }
 
-.title h1{
+/*Estilo navbar*/
+.foto {
+    background-image: url(../images/bg.png);
+    height: 280px;
+}
+
+.foto a {
+    font-family: text;
+
+}
+
+.title h1 {
     font-size: 50px;
     font-family: title;
     color: white;
@@ -18,18 +37,16 @@
     margin-left: 20px;
     padding-bottom: 0px;
 }
-.title h6{
-    font-family: title;
+.title h6 {
     color: white;
     font-size: 10px;
 }
-
-.navbar-toggler{
+.navbar-toggler {
     margin-right: 20px;
     color: white;
     background: rgba(255, 255, 255, 0.6);
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     margin-right: 20px;
     padding: 10px;
     border-color: #e3e3e3;
@@ -42,21 +59,27 @@
     width: 150px;
     background-color: rgb(194, 126, 106, 0.5);
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: white;
     font-weight: bold;
 }
 /*FIN estilo navbar*/
 
 
+/*Footer*/
+footer {
+    background-image: url(https://i.pinimg.com/originals/75/96/41/7596414ecd2019d7e0fd782f6aa736ae.jpg)
+}
+/*FIN Footer*/
+
 /*Fuentes*/
 @font-face {
     font-family: title;
     src: url(../fonts/TAKOYAKI.ttf);
 }
+
 @font-face {
     font-family: text;
     src: url(../fonts/Champagne\ &\ Limousines.ttf);
 }
-
-
