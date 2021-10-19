@@ -5,3 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
         $("#footer").load("footer.html"); 
     });
 });
+
+function cargar(){
+    console.log( window.location.href);
+}
