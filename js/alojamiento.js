@@ -82,7 +82,7 @@ function ordenar() {
       if (ordenInvertido == false) {
         return parseInt(a[3]) - parseInt(b[3])
       } else {
-        return parseInt(a[3]) < parseInt(b[3])
+        return parseInt(b[3]) - parseInt(a[3])
       }
     })
     console.log(hoteles)
