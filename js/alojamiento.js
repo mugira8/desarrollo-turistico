@@ -91,9 +91,9 @@ function ordenar() {
     console.log("ubicacion seleccionado")
     hoteles.sort(function (a, b) {
       if (ordenInvertido == false) {
-        return a[2] > b[2]
+        return a[2] > b[2] ? 1 : -1;
       } else {
-        return a[2] < b[2]
+        return a[2] < b[2] ? 1 : -1;
       }
     })
     buscar();
