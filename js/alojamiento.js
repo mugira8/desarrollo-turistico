@@ -7,6 +7,8 @@ hoteles = [
   ["Hotel Housei", "El Housei Hotel cuenta con servicio de traslado gratuito, recepción 24 horas, jardín, guardaesquíes, tiendas (en el mismo establecimiento), máquina expendedora y aparcamiento gratuito", "Nagano, Yamanouchi", "385,99€", "images/Hoteles/HotelHousei.jpg"]
 ]
 
+disponibilidad = [Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500),Math.floor(Math.random()*500)]
+hotelSeleccionado = 0;
 document.addEventListener("DOMContentLoaded", function (event) {
   ordenNombre = document.getElementById("ordenNombre");
   ordenPrecio = document.getElementById("ordenPrecio");
@@ -39,6 +41,7 @@ function buscar() {
   for (let i = 0; i < hoteles.length; i++) {
     if (hoteles[i][0].toLowerCase().includes(respuesta.toLowerCase())) {
       notFound = true
+
       document.getElementById("cardGroup").innerHTML += `
                 <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
                   <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel">
@@ -98,4 +101,41 @@ function ordenar() {
     })
     buscar();
   }
+}
+
+function abrirModal(a){
+  document.getElementById("inputReservas").value="";
+  document.getElementById("modalTitulo").innerHTML = hoteles[a][0];
+  hotelSeleccionado = a;
+  reservasDisponibles=document.getElementById("reservasDisponibles");
+  reservasDisponibles.innerHTML ="Plazas disponibles: "+ disponibilidad[a];
+  resultadoReservas = document.getElementById("resultadoReservas").innerHTML = "";
+}
+
+function reservar(){
+  resultadoReservas = document.getElementById("resultadoReservas");
+  // resultadoReservas.innerHTML = "";
+  cantidadReservas = document.getElementById("inputReservas").value;
+  console.log("Cantidad reservas: ", cantidadReservas, "hotel seleccionado: ", hotelSeleccionado, "plazas restantes: ", disponibilidad[hotelSeleccionado]);
+
+  if (cantidadReservas <= disponibilidad[hotelSeleccionado]){
+    disponibilidad[hotelSeleccionado] = disponibilidad[hotelSeleccionado]-cantidadReservas
+
+    reservasDisponibles.innerHTML ="Plazas disponibles: "+ disponibilidad[hotelSeleccionado];
+    resultadoReservas.innerHTML = "Reserva realizada con exito"
+    resultadoReservas.style="color: green;"
+    setTimeout(() => {  resultadoReservas.innerHTML="";  resultadoReservas.style="color: black;"}, 2000); //Este codigo se ejecuta cuando pasen 2 segundos
+  } else {
+    resultadoReservas.innerHTML = "No hay suficientes plazas"
+    resultadoReservas.style="color: red;"
+    setTimeout(() => {  resultadoReservas.innerHTML=""; resultadoReservas.style="color: black;" }, 2000);
+  }
+}
+
+function comprobarNumero(e) {
+  e = e || window.event;
+  var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+  var charStr = String.fromCharCode(charCode);
+  if (!charStr.match(/^[0-9]+$/))
+    e.preventDefault();
 }
