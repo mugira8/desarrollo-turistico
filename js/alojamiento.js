@@ -112,7 +112,7 @@ function abrirModal(a){
   document.getElementById("modalTitulo").style.fontFamily = "text";
   document.getElementById("modalTitulo").style.fontSize = "30px";
 
-  document.getElementById("modalTitulo").innerHTML += hoteles[a][3]
+  document.getElementById("modalTitulo").innerHTML += " - " + hoteles[a][3]
 }
 
 function reservar(){
