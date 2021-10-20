@@ -105,13 +105,12 @@ function ordenar() {
 function abrirModal(a){
   document.getElementById("inputReservas").value="";
   document.getElementById("modalTitulo").innerHTML = hoteles[a][0];
-  document.getElementById("modalTitulo").style.fontFamily = "text";
-  document.getElementById("modalTitulo").style.fontSize = "30px";
-
   hotelSeleccionado = a;
   reservasDisponibles=document.getElementById("reservasDisponibles");
   reservasDisponibles.innerHTML ="Plazas disponibles: "+ disponibilidad[a];
   resultadoReservas = document.getElementById("resultadoReservas").innerHTML = "";
+
+  document.getElementById("modalTitulo").innerHTML += hoteles[a][3]
 }
 
 function reservar(){
@@ -120,14 +119,23 @@ function reservar(){
   cantidadReservas = document.getElementById("inputReservas").value;
   console.log("Cantidad reservas: ", cantidadReservas, "hotel seleccionado: ", hotelSeleccionado, "plazas restantes: ", disponibilidad[hotelSeleccionado]);
 
-  if (cantidadReservas <= disponibilidad[hotelSeleccionado]){
+  if (cantidadReservas == 0 ){
+    console.log(cantidadReservas);
+    resultadoReservas.innerHTML = "No has seleccionado la cantidad"
+    resultadoReservas.style="color: grey;"
+    setTimeout(() => {  resultadoReservas.innerHTML=""; resultadoReservas.style="color: black;" }, 2000);
+
+  } else if(  cantidadReservas <= disponibilidad[hotelSeleccionado]){
+    console.log("reservas menos "+cantidadReservas);
     disponibilidad[hotelSeleccionado] = disponibilidad[hotelSeleccionado]-cantidadReservas
 
     reservasDisponibles.innerHTML ="Plazas disponibles: "+ disponibilidad[hotelSeleccionado];
     resultadoReservas.innerHTML = "Reserva realizada con exito"
     resultadoReservas.style="color: green;"
     setTimeout(() => {  resultadoReservas.innerHTML="";  resultadoReservas.style="color: black;"}, 2000); //Este codigo se ejecuta cuando pasen 2 segundos
-  } else {
+
+    } else if (cantidadReservas > disponibilidad[hotelSeleccionado]){
+    console.log("reservas mas "+cantidadReservas);
     resultadoReservas.innerHTML = "No hay suficientes plazas"
     resultadoReservas.style="color: red;"
     setTimeout(() => {  resultadoReservas.innerHTML=""; resultadoReservas.style="color: black;" }, 2000);
