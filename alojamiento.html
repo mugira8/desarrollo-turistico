@@ -59,8 +59,7 @@
   <div id="cardGroup" class="row row-cols-4 g-4 p-3 align-content-center">
 
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
-      <a href="" class="cardTop " data-bs-toggle="modal" data-bs-target="#modalHotel">
-        <!--Enlace para abrir modal-->
+      <a href="" class="cardTop " data-bs-toggle="modal" data-bs-target="#modalHotel" onclick="abrirModal(0)"><!--Enlace para abrir modal-->
         <img src="images/Hoteles/HotelShinjukuGranbell.jpg" class="card-img-top">
         <p class="cardButton">Ver más</p>
       </a>
@@ -80,7 +79,7 @@
     </div>
 
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
-      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel">
+      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel" onclick="abrirModal(1)">
         <img src="images/Hoteles/HotelRedPlanet.jpg" class="card-img-top">
         <p class="cardButton">Ver más</p>
       </a>
@@ -100,7 +99,7 @@
     </div>
 
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
-      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel">
+      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel" onclick="abrirModal(2)">
         <img src="images/Hoteles/HotelMitsuiGarden.jpg" class="card-img-top">
         <p class="cardButton">Ver más</p>
       </a>
@@ -120,7 +119,7 @@
     </div>
 
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
-      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel">
+      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel" onclick="abrirModal(3)">
         <img src="images/Hoteles/HotelImayaHostel.jpg" class="card-img-top">
         <p class="cardButton">Ver más</p>
       </a>
@@ -140,7 +139,7 @@
     </div>
 
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
-      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel">
+      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel" onclick="abrirModal(4)">
         <img src="images/Hoteles/HotelSorano.jpg" class="card-img-top">
         <p class="cardButton">Ver más</p>
       </a>
@@ -160,7 +159,7 @@
     </div>
 
     <div class="card card-alojamiento col-lg-3 col-md-5 col-sm-8 col-8">
-      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel">
+      <a href="" class="cardTop" data-bs-toggle="modal" data-bs-target="#modalHotel" onclick="abrirModal(5)">
         <img src="images/Hoteles/HotelHousei.jpg" class="card-img-top">
         <p class="cardButton">Ver más</p>
       </a>
@@ -200,15 +199,19 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Hey, listen!</h5>
+        <h5 class="modal-title" id="modalTitulo">Hey, listen!</h5>
         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
       </div>
       <div class="modal-body">
-        Los servidores se encuentran en mantenimiento, disculpe las molestias.
+        <!-- Los servidores se encuentran en mantenimiento, disculpe las molestias. -->
+        <div id="reservasDisponibles"></div>
+        <label for="reservas">Cantidad a reservar:</label>
+        <input type="number" id="inputReservas" name="reservas" min="0" max="" onkeypress="comprobarNumero()">
+        <div id="resultadoReservas"></div>
       </div>
       <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-        <button type="button" id="botonModal" data-bs-dismiss="modal" class="btn">Vaya...</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" id="botonModal" class="btn" onclick="reservar()">Reservar</button>
       </div>
     </div>
   </div>

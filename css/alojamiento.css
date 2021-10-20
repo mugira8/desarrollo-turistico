@@ -140,6 +140,9 @@ p{
 .modal-header{
     border-bottom: none !important;
 }
+#reservasDisponibles{
+    margin-bottom: 15px;
+}
 
 
 
