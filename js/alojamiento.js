@@ -105,6 +105,9 @@ function ordenar() {
 function abrirModal(a){
   document.getElementById("inputReservas").value="";
   document.getElementById("modalTitulo").innerHTML = hoteles[a][0];
+  document.getElementById("modalTitulo").style.fontFamily = "text";
+  document.getElementById("modalTitulo").style.fontSize = "30px";
+
   hotelSeleccionado = a;
   reservasDisponibles=document.getElementById("reservasDisponibles");
   reservasDisponibles.innerHTML ="Plazas disponibles: "+ disponibilidad[a];
