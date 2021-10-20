@@ -109,6 +109,8 @@ function abrirModal(a){
   reservasDisponibles=document.getElementById("reservasDisponibles");
   reservasDisponibles.innerHTML ="Plazas disponibles: "+ disponibilidad[a];
   resultadoReservas = document.getElementById("resultadoReservas").innerHTML = "";
+  document.getElementById("modalTitulo").style.fontFamily = "text";
+  document.getElementById("modalTitulo").style.fontSize = "30px";
 
   document.getElementById("modalTitulo").innerHTML += hoteles[a][3]
 }
